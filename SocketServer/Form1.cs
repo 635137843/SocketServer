@@ -55,7 +55,7 @@ namespace SocketServer
 
             //创建线程用来监听;
             //线程创建方法：Thread th = new Thread(Listen);  
-            //其中listen为方法名 即实例化 
+            //其中listen为方法名 即实例化
             Thread th = new Thread(Listen);
             th.IsBackground = true;
             th.Start(socketWatch);    //Start里面的参数 是线程方法的参数
