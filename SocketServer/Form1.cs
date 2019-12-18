@@ -112,9 +112,9 @@ namespace SocketServer
             long length = 0;
             long recive = 0; //接收的大文件总的字节数
             int count = 0;
+            string filePath = @"D:\socket下载\down" + count + ".txt";
             while (true)
             {
-                string filePath = @"D:\socket下载\down" + count + ".txt";
                 count++;
                 byte[] buffer = new byte[1024 * 1024 * 10];
                 int r = socketSend.Receive(buffer);
